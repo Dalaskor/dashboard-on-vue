@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<HeaderView logoName="Dashboard"/>
+<main class="main">
+  <div class="container">
+    <div class="main__content">
+      <div class="main__side"></div>
+      <div class="main__side"></div>
+    </div>
+  </div>
+</main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HeaderView from './components/HeaderView.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HeaderView,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background: #011625;
+}
+.container {
+  max-width: 1840px;
+  margin: 0 auto;
+}
+.main {
+  &__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 </style>
