@@ -4,13 +4,12 @@
   <div class="container">
     <div class="main__content">
       <div class="main__side">
-        <div class="main__side-body">
-          <div class="main__times">
-            <!-- eslint-disable-next-line -->
-            <TimesView v-for="avgTime in avgTimes"
-                      :title="avgTime.title" :description="avgTime.description"/>
-          </div>
+        <div class="main__times">
+          <!-- eslint-disable-next-line -->
+          <TimesView v-for="avgTime in avgTimes"
+                    :title="avgTime.title" :description="avgTime.description"/>
         </div>
+        <TableView :data="data"/>
       </div>
       <div class="main__side"></div>
     </div>
@@ -21,6 +20,7 @@
 <script>
 import HeaderView from './components/HeaderView.vue';
 import TimesView from './components/TimesView.vue';
+import TableView from './components/TableView.vue';
 
 export default {
   name: 'App',
@@ -40,11 +40,56 @@ export default {
           description: 'Avq. Time To Fulfill',
         },
       ],
+      data: [
+        {
+          name: 'Eleanor Pena',
+          project: 'Project 01',
+          area: 'Finance',
+          status: 'Completed',
+          country: 'Australia',
+        },
+        {
+          name: 'Savannah Nguyen',
+          project: 'Project 02',
+          area: 'Human Resources',
+          status: 'Off track',
+          country: 'Austria',
+        },
+        {
+          name: 'Ralph Edwards',
+          project: 'Project 05',
+          area: 'Marketing',
+          status: 'On track',
+          country: 'Colombia',
+        },
+        {
+          name: 'Eleanor Pena',
+          project: 'Project 01',
+          area: 'Finance',
+          status: 'Completed',
+          country: 'Australia',
+        },
+        {
+          name: 'Savannah Nguyen',
+          project: 'Project 02',
+          area: 'Human Resources',
+          status: 'Off track',
+          country: 'Austria',
+        },
+        {
+          name: 'Ralph Edwards',
+          project: 'Project 05',
+          area: 'Marketing',
+          status: 'On track',
+          country: 'Colombia',
+        },
+      ],
     };
   },
   components: {
     HeaderView,
     TimesView,
+    TableView,
   },
 };
 </script>
