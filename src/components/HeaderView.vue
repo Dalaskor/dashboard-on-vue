@@ -19,10 +19,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.container {
-  max-width: 1840px;
-  margin: 0 auto;
-}
 .header {
   &__content {
     display: flex;
