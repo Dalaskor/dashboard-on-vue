@@ -1,5 +1,7 @@
 # dashboard-on-vue
 
+DEMO: https://dalaskor.github.io/dashboard-on-vue/
+
 ## Project setup
 ```
 npm install
