@@ -157,6 +157,15 @@ body {
 .container {
   max-width: 1840px;
   margin: 0 auto;
+  // Брейпоинты для адаптива
+  /* MOBILE */
+  @media (max-width: 767.98px) {
+      max-width: none;
+  }
+  /* MOBILE */
+  @media (max-width: 479.98px) {
+      max-width: none;
+  }
 }
 .main {
   &__content {
@@ -164,6 +173,9 @@ body {
     align-items: start;
     justify-content: space-between;
     gap: 40px;
+    @media (max-width: 992.98px) {
+        flex-wrap: wrap;
+    }
   }
   &__side {
     display: flex;
