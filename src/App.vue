@@ -11,7 +11,9 @@
         </div>
         <TableView :data="data"/>
       </div>
-      <div class="main__side"></div>
+      <div class="main__side">
+        <TotalChartView/>
+      </div>
     </div>
   </div>
 </main>
@@ -21,6 +23,7 @@
 import HeaderView from './components/HeaderView.vue';
 import TimesView from './components/TimesView.vue';
 import TableView from './components/TableView.vue';
+import TotalChartView from './components/TotalChartView.vue';
 
 export default {
   name: 'App',
@@ -90,6 +93,7 @@ export default {
     HeaderView,
     TimesView,
     TableView,
+    TotalChartView,
   },
 };
 </script>
