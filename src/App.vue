@@ -12,6 +12,7 @@
         <TableView :data="data"/>
       </div>
       <div class="main__side">
+        <PieChartView/>
         <TotalChartView/>
       </div>
     </div>
@@ -24,6 +25,7 @@ import HeaderView from './components/HeaderView.vue';
 import TimesView from './components/TimesView.vue';
 import TableView from './components/TableView.vue';
 import TotalChartView from './components/TotalChartView.vue';
+import PieChartView from './components/PieChartView.vue';
 
 export default {
   name: 'App',
@@ -86,6 +88,55 @@ export default {
           status: 'On track',
           country: 'Colombia',
         },
+        {
+          name: 'Eleanor Pena',
+          project: 'Project 01',
+          area: 'Finance',
+          status: 'Completed',
+          country: 'Australia',
+        },
+        {
+          name: 'Savannah Nguyen',
+          project: 'Project 02',
+          area: 'Human Resources',
+          status: 'Off track',
+          country: 'Austria',
+        },
+        {
+          name: 'Ralph Edwards',
+          project: 'Project 05',
+          area: 'Marketing',
+          status: 'On track',
+          country: 'Colombia',
+        },
+        {
+          name: 'Eleanor Pena',
+          project: 'Project 01',
+          area: 'Finance',
+          status: 'Completed',
+          country: 'Australia',
+        },
+        {
+          name: 'Savannah Nguyen',
+          project: 'Project 02',
+          area: 'Human Resources',
+          status: 'Off track',
+          country: 'Austria',
+        },
+        {
+          name: 'Ralph Edwards',
+          project: 'Project 05',
+          area: 'Marketing',
+          status: 'On track',
+          country: 'Colombia',
+        },
+        {
+          name: 'Savannah Nguyen',
+          project: 'Project 02',
+          area: 'Human Resources',
+          status: 'Off track',
+          country: 'Austria',
+        },
       ],
     };
   },
@@ -94,6 +145,7 @@ export default {
     TimesView,
     TableView,
     TotalChartView,
+    PieChartView,
   },
 };
 </script>
